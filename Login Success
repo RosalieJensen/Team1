@@ -1,0 +1,13 @@
+def login_sucess():
+    global login_success_screen
+    login_success_screen = Toplevel(login_screen)
+    login_success_screen.title("Success")
+    login_success_screen.geometry("900x700")
+    logo = ImageTk.PhotoImage(Image.open(r"C:\Users\bushj\Downloads\coffee.jpg"))
+    label = Label(login_success_screen, image = logo, width= "900")
+    label.photo = logo
+    label.pack()
+    Label(login_success_screen, text="Success", bg="#FAE316", width="300", height="2", fg = "#DA262E", font=("Sitka", 20)).pack()
+    Label(login_success_screen, text="").pack()
+    Button(login_success_screen, text="Click Here to Enter the System",
+    width=25, height=7, fg = "#DA262E", font=("Sitka", 15), bg = "#FAE316", command = product_analysis).pack()
