@@ -1,0 +1,18 @@
+ef login():
+    global login_screen
+    login_screen = Toplevel(main_screen)
+    login_screen.title("Login")
+    login_screen.geometry("900x700")
+    logo = ImageTk.PhotoImage(Image.open(r"C:\Users\bushj\Downloads\coffee.jpg"))
+    label = Label(login_screen, image = logo, width= "900")
+    label.photo = logo
+    label.pack()
+
+    global username_verify
+    global password_verify
+ 
+    username_verify = StringVar()
+    password_verify = StringVar()
+ 
+    global username_login_entry
+    global password_login_entry
